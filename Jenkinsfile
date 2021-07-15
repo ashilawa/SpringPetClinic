@@ -37,7 +37,7 @@ pipeline {
 
     stage('Deploy') {
       steps {
-        bat 'java -jar /var/lib/jenkins/workspace/PetDeclerativePipline/target/*.jar'
+        bat 'java -jar /var/lib/jenkins/workspace/JenkinsDeclarativePipelineDemo/target/*.jar'
       }
 
     }
