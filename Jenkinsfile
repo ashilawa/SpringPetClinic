@@ -37,7 +37,7 @@ pipeline {
 
     stage('Deploy') {
       steps {
-        bat 'java -jar C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\JenkinsDeclarativePipelineDemo\\target\\*.jar'
+        bat 'java -jar target\\*.jar'
       }
 
     }
