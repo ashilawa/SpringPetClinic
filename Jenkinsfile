@@ -37,7 +37,9 @@ pipeline {
 
     stage('Deploy') {
       steps {
-        bat 'java -jar C:\\Users\\aramchan\\Jenkins\\.jenkins\\workspace\\JenkinsDeclarativePipelineDemo\\target\\*.jar'
+        bat "copy \\target\\spring-petclinic-2.1.0.BUILD-SNAPSHOT.jar \"C:\\Users\\aramchan\\work\\spring-petclinic-2.1.0.BUILD-SNAPSHOT.jar\""
+        
+        bat 'java -jar C:\\Users\\aramchan\\Jenkins\\.jenkins\\workspace\\JenkinsDeclarativePipelineDemo\\target\\spring-petclinic-2.1.0.BUILD-SNAPSHOT.jar'
       }
 
     }
